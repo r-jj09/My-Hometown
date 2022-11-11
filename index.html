@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Hometown</title>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>"
-    />
-  </head>
-  <body>
-    <h1>Welcome to Budapest</h1>
-    <h2>The capiatal city of Hungary.</h2>
-    <div class="history">
-      <p>
-        The previously separate towns of Buda, Óbuda, and Pest were officially
-        unified in 1873 and given the new name Budapest. From around 1300 to the
-        incorporation of 1873, Buda was the capital of the Kingdom of Hungary
-        for five periods of less than a century each.
-      </p>
-      <a class="wiki" href="https://en.wikipedia.org/wiki/History_of_Budapest"
-        >Read more about Budapest's bright history</a
-      >
-      //TODO:Sightseeing block with pictures //Blurry wallpaper //
-    </div>
-    <style>
-      .wiki {
-      }
-      h1 {
-      }
-      h2 {
-      }
-      p {
-      }
-    </style>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hometown</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏡</text></svg>" />
+</head>
+
+<body>
+  <img class="background" src="https://shegowandering.com/wp-content/uploads/2020/08/Life-can-be-tough-19.png">
+  <h1>Welcome to Budapest</h1>
+  <h2>The capiatal city of Hungary.</h2>
+  <div class="history">
+    <p>
+      The previously separate towns of Buda, Óbuda, and Pest were officially
+      unified in 1873 and given the new name Budapest. From around 1300 to the
+      incorporation of 1873, Buda was the capital of the Kingdom of Hungary
+      for five periods of less than a century each.
+    </p>
+    <a class="wiki" href="https://en.wikipedia.org/wiki/History_of_Budapest" target="_blank">Read more about
+      Budapest's
+      bright history</a>
+  </div>
+  <div class="seeing">
+    <h1>Time for sightseeing</h1>
+
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+    * {
+      text-align: center;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    img.background {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      -webkit-filter: blur(5px);
+      filter: blur(5px);
+    }
+
+    p {
+      max-width: 400px;
+      min-width: 100px;
+      margin: 50px;
+
+    }
+
+    a {
+      padding: 16px;
+      margin: 45px;
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      color: black;
+      border: 3px solid rgb(0, 0, 0);
+      border-radius: 12px;
+      transition: 0.3s;
+      color: rgb(0, 0, 0);
+    }
+
+    .wiki:hover {
+      background-color: #3e8e41;
+      color: rgb(255, 255, 255);
+      border: 3px solid rgb(255, 255, 255);
+    }
+
+    image.backgound {
+      -webkit-filter: blur(4px);
+      filter: blur(4px);
+    }
+
+    h1 {}
+
+    h2 {}
+  </style>
+</body>
+
 </html>
